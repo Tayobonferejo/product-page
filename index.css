@@ -10,19 +10,27 @@ body {
 
 header {
     width: 90%;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.63);
     margin: auto;
+    padding:  18px 0;
 }
 nav, ul, .profile-cart{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-    align-items: center;
+.profile-cart {
+    gap: 2rem;
+    justify-content: flex-start;
 }
 
 ul {
     list-style: none;
+    gap: 2rem;
+}
+
+#profile > img {
+    width: 40px;
 }
 
