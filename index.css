@@ -9,12 +9,12 @@ body {
 }
 
 header {
-    width: 90%;
+    width: 85%;
     border-bottom: 2px solid rgba(128, 128, 128, 0.63);
     margin: auto;
     padding:  18px 0;
 }
-nav, ul, .profile-cart{
+nav, ul, .profile-cart, #logo-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,9 +25,14 @@ nav, ul, .profile-cart{
     justify-content: flex-start;
 }
 
+#logo-nav {
+    gap: 3rem;
+}
+
 ul {
     list-style: none;
     gap: 2rem;
+    color: gray;
 }
 
 #profile > img {
