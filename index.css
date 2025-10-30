@@ -4,3 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: azure;
+}
+
+header {
+    width: 90%;
+    border-bottom: 2px solid gray;
+    margin: auto;
+}
+nav, ul, .profile-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+

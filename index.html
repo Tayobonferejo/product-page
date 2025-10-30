@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/index.css">
   
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
@@ -25,7 +26,7 @@
               <li>Contact</li>
             </ul>
          </div>
-         <div>
+         <div class="profile-cart">
             <div>
                 <img src="/images/icon-cart.svg">
             </div>
@@ -47,14 +48,22 @@
     </div>
     <div>
         <div>
-            <div>
+            <div class="product-container">
                 <img src="/images/image-product-1.jpg">
             </div>
             <div>
-                <img src="/images/image-product-1.jpg">
-                <img src="/images/image-product-1.jpg">
-                <img src="/images/image-product-1.jpg">
-                <img src="/images/image-product-1.jpg">
+                <div class="thumbnail-container">
+                    <img src="/images/image-product-1-thumbnail.jpg">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="/images/image-product-2-thumbnail.jpg">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="/images/image-product-3-thumbnail.jpg">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="/images/image-product-4-thumbnail.jpg">
+                </div>
             </div>
         </div>
         <div>
@@ -74,7 +83,7 @@
                     <img src="/images/icon-minus.svg">
                 </div>
                 <div>
-
+                    <p>0</p>
                 </div>
                 <div>
                     <img src="/images/icon-plus.svg">
@@ -82,7 +91,7 @@
             </div>
             <div>
                   <div>
-                      <img src="/images/icon-cart.svg">
+                     <img src="/images/icon-cart.svg">
                   </div>
                   <div>
                       <p>Add to cart</p>
