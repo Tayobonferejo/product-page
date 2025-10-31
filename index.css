@@ -15,10 +15,13 @@ header {
     margin: auto;
     padding: 18px 0;
 }
-nav, ul, .profile-cart, #logo-nav{
+nav, ul, .profile-cart, #logo-nav, .price-cart {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+nav, ul, .profile-cart, #logo-nav {
+    justify-content: space-between;
 }
 
 .profile-cart {
@@ -42,12 +45,15 @@ ul {
 
 main {
     display: flex;
+    justify-content: center;
     width: 85%;
     margin: 4rem auto;
 }
 
 .hero-container {
-    width: 50%;
+    width: 40%;
+    border: 2px solid blue;
+    
 }
 
 .product-container {
@@ -70,4 +76,5 @@ main {
 
 #text {
     margin: 2rem 0;
+    line-height: 20px;
 }
