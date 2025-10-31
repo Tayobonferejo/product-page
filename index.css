@@ -37,13 +37,13 @@ ul {
 }
 
 #profile > img {
-    width: 40px;
+    width: 30px;
 }
 
 main {
     display: flex;
     width: 85%;
-    margin: auto;
+    margin: 4rem auto;
 }
 
 .hero-container {
@@ -52,11 +52,11 @@ main {
 
 .product-container {
     width: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 } 
 
 .product-container > img {
-    width: 500px;
+    width: 400px;
     height: 400px;
 }
 
@@ -66,4 +66,8 @@ main {
 
 .thumbnail-container > img {
     width: 80px;
+}
+
+#text {
+    margin: 2rem 0;
 }
