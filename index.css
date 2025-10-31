@@ -52,13 +52,18 @@ main {
 
 .product-container {
     width: 100%;
-    height: 60vh; 
+    border: 2px solid blue;
 } 
 
 .product-container > img {
     width: 500px;
+    height: 400px;
 }
 
 .thumbnail {
     display: flex;
+}
+
+.thumbnail-container > img {
+    width: 80px;
 }
