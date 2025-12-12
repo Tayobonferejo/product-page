@@ -78,3 +78,26 @@ main {
     margin: 2rem 0;
     line-height: 20px;
 }
+
+.cart-button {
+    display: flex;
+    background-color: orangered;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    width: fit-content;
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+}
+
+.price-container {
+    display: flex;
+    gap: 9px;
+}
+
+.price-cart {
+    width: 130px;
+    justify-content: space-around;
+    background-color: rgb(239, 236, 241);
+    border-radius: 5px;
+}
