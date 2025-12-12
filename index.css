@@ -1,12 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;// css reset 
+    box-sizing: border-box;
 }
 
 body {
     background-color: azure;
-    height: 100vh; // body heights 
+    height: 100vh; 
 }
 
 header {
@@ -58,7 +58,7 @@ main {
 
 .product-container {
     width: 100%;
-    /* border: 2px solid blue; */
+
 } 
 
 .product-container > img {
