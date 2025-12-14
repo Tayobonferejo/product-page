@@ -7,7 +7,7 @@
 body {
     background-color: azure;
     height: 100vh; 
-    font-size: 18px;
+    font-size: 16px;
 }
 
 header {
@@ -47,19 +47,17 @@ ul {
 main {
     display: flex;
     justify-content: center;
-    width: 95%;
+    width: 85%;
     margin: 4rem auto;
 }
 
 .hero-container {
     width: 40%;
-    padding: 0 2rem;
-    
+    padding: 0 1rem;
 }
 
 .product-container {
     width: 100%;
-
 } 
 
 .product-container > img {
@@ -79,8 +77,9 @@ main {
 }
 
 #text {
-    margin: 2rem 0;
+    margin: 1rem 0;
     line-height: 20px;
+    color: rgba(0, 0, 0, 0.555);
 }
 
 .cart-button {
@@ -116,4 +115,25 @@ main {
 
 #text-div {
     padding-top: 3rem;
+}
+
+#price-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    gap: 1rem;
+}
+
+#discount-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#percent {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
