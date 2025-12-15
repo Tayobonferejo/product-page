@@ -88,6 +88,7 @@ main {
     align-items: center;
     gap: 9px;
     width: fit-content;
+    border: none;
     padding: 0.5rem 3rem;
     border-radius: 5px;
 }
