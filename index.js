@@ -36,18 +36,22 @@ parentOfPrice.addEventListener("click" , function(event){
 })
 
 function totalPrice (individualUnit, unitPrice) {
-    return checkout.innerHTML = `<div class=""checkout-div>
-    <div>
-        <img src="/images/image-product-1.jpg" class="product-image">
+    return checkout.innerHTML = `
+    <div class="cart">
+        <div>
+            <img src="/images/image-product-1.jpg" id="checkout-image">
+        </div>
+        <div>
+            <p>Fall Limited Edition Sneakers</p>
+            <p>$${unitPrice} × ${individualUnit} <span id="total">$${unitPrice * individualUnit}</span></p>
+        </div>
+        <div>
+            <img src="/images/icon-delete.svg" alt="delete icon">
+        </div>
     </div>
-    <div>
-        <p>Fall Limited Edition Sneakers</p>
-        <p>$ ${unitPrice} × ${individualUnit} $ ${unitPrice * individualUnit}</p>
-    </div>
-    <div>
-    </div>
-        <img src="/images/icon-delete.svg" alt="delete icon">
-    </div>`
+
+    <button id="button-checkout">Checkout</button>
+    `
 }
 
 button.addEventListener("click", function() {
@@ -62,3 +66,5 @@ button.addEventListener("click", function() {
     }
     
 });
+
+deleteCart()

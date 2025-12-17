@@ -138,10 +138,10 @@ main {
 }
 
 aside {
-    width: 260px;
+    width: 290px;
     height: 200px;
     border-radius: 4px;
-    background-color: rgb(221, 213, 213);
+    background-color: rgb(243, 243, 243);
     position: absolute;
     /* display: none; */
     right: 100px;
@@ -157,9 +157,35 @@ aside > h3 {
 #product-item-container {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 70%;
-
 }
 
+#checkout-image {
+    width: 40px;
+    height: 40px;
+}
+
+#button-checkout {
+    background-color: orangered;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 90%;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#total {
+    font-weight: bold;
+}
