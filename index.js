@@ -6,7 +6,7 @@ const discountedPrice = document.getElementById("discount");
 const checkout = document.getElementById("product-item-container")
 const unitPrice = (Number(discountedPrice.innerText));
 
-let individualUnit = 0
+let individualUnit = 0;
 console.log(unitPrice);
 
 parentOfPrice.addEventListener("click" , function(event){
@@ -46,7 +46,7 @@ function totalPrice (individualUnit, unitPrice) {
             <p>$${unitPrice} × ${individualUnit} <span id="total">$${unitPrice * individualUnit}</span></p>
         </div>
         <div>
-            <img src="/images/icon-delete.svg" alt="delete icon">
+            <img src="/images/icon-delete.svg" alt="delete icon" id="delete">
         </div>
     </div>
 
@@ -67,4 +67,15 @@ button.addEventListener("click", function() {
     
 });
 
-deleteCart()
+
+checkout.addEventListener("click", function(event)
+{
+    if(event.target.id === "delete")
+    {
+        deleteCart()
+    }
+})
+function deleteCart() {
+    checkout.innerHTML = `<p>Your cart is empty</p>`; // removes everything inside the div
+    quantity.innerText = 0;
+}
