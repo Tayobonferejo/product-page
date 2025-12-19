@@ -5,7 +5,10 @@ const button = document.getElementById("button");
 const numberOfItem = document.getElementById("numberOfItem");
 const discountedPrice = document.getElementById("discount");
 const checkout = document.getElementById("product-item-container")
+const cartIcon = document.getElementById("cart-icon")
+const aside = document.getElementById("aside")
 const unitPrice = (Number(discountedPrice.innerText));
+aside
 
 let individualUnit = 0;
 console.log(unitPrice);
@@ -81,7 +84,17 @@ checkout.addEventListener("click", function(event)
         deleteCart()
     }
 })
+
 function deleteCart() {
     checkout.innerHTML = `<p>Your cart is empty</p>`; // removes everything inside the div
     quantity.innerText = 0;
 }
+
+cartIcon.addEventListener("click", function(event)
+{
+     if(event.target.id === "cart-icon")
+    {
+        aside.classList.toggle("checkout-div");
+        // console.log(event.target.id);
+    }
+})
