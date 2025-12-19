@@ -43,6 +43,10 @@ ul {
     width: 40px;
 }
 
+#profile {
+    position: relative;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -142,8 +146,7 @@ aside {
     height: 200px;
     border-radius: 4px;
     background-color: rgb(243, 243, 243);
-    position: absolute;
-    /* display: none; */
+    display: none;
     right: 100px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.308);
 }
@@ -177,7 +180,7 @@ aside > h3 {
     font-weight: bold;
 }
 
-.cart {
+.cart-block {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -188,4 +191,22 @@ aside > h3 {
 
 #total {
     font-weight: bold;
+}
+
+.number-block {
+    position: absolute;
+    /* background-color: blue; */
+    border: 2px solid black;
+    bottom: 20px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#cart {
+    position: relative;
 }

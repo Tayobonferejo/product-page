@@ -2,6 +2,7 @@
 const parentOfPrice = document.querySelector(".price-container");
 const quantity = document.getElementById("quantity");
 const button = document.getElementById("button");
+const numberOfItem = document.getElementById("numberOfItem");
 const discountedPrice = document.getElementById("discount");
 const checkout = document.getElementById("product-item-container")
 const unitPrice = (Number(discountedPrice.innerText));
@@ -15,6 +16,8 @@ parentOfPrice.addEventListener("click" , function(event){
         individualUnit = individualUnit + 1;
         sumOfUnit = individualUnit;
         quantity.innerText = individualUnit;
+        numberOfItem.innerText = individualUnit;
+        numberOfItem.className = "number-block"
 
     }
 
@@ -25,11 +28,14 @@ parentOfPrice.addEventListener("click" , function(event){
         
         if(individualUnit < 0) {
             individualUnit = 0;
-             quantity.innerText = individualUnit;
+            quantity.innerText = individualUnit;
+            numberOfItem.innerText = "";
+            numberOfItem.classList.remove("number-block");
         }
         else {
             sumOfUnit = individualUnit;
             quantity.innerText = individualUnit;
+            numberOfItem.innerText = individualUnit;
         }
     }
 
@@ -37,7 +43,7 @@ parentOfPrice.addEventListener("click" , function(event){
 
 function totalPrice (individualUnit, unitPrice) {
     return checkout.innerHTML = `
-    <div class="cart">
+    <div class="cart-block">
         <div>
             <img src="/images/image-product-1.jpg" id="checkout-image">
         </div>
