@@ -215,3 +215,34 @@ aside > h3 {
 #cart {
     position: relative;
 }
+
+.main-contain {
+    background-color: rgba(0, 0, 0, 0.267);
+    height: 100vh;
+}
+
+.product-image-slider {
+    width: 450px;
+    height: 450px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.previous-icon {
+    position: absolute;
+    bottom: 230px;
+    left: -12px;
+}
+
+.next-icon {
+    position: absolute;
+    bottom: 230px;
+}

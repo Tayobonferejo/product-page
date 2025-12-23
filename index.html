@@ -12,53 +12,112 @@
   <script src="/index.js" defer></script>
 </head>
 <body>
+    <section class="main-contain">
+        <header>
+            <nav>
+                <div id="logo-nav">
+                <div>
+                    <img src="/images/logo.svg">
+                </div>
 
-  <header>
-      <nav>
-        <div id="logo-nav">
-          <div>
-            <img src="/images/logo.svg">
-          </div>
-
-         <div>
-            <ul>
-              <li><a href="#">Collections</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-         </div>
-        </div>
-        <div class="profile-cart">
-            <div>
-                <div id="cart">
-                    <img src="/images/icon-cart.svg" id="cart-icon">
-                    <div id="numberOfItemDiv">
-                        <p id="numberOfItem"></p>
+                <div>
+                    <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="profile-cart">
+                    <div>
+                        <div id="cart">
+                            <img src="/images/icon-cart.svg" id="cart-icon">
+                            <div id="numberOfItemDiv">
+                                <p id="numberOfItem"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="profile">
+                        <img src="/images/image-avatar.png">
                     </div>
                 </div>
-            </div>
-            <div id="profile">
-                <img src="/images/image-avatar.png">
-            </div>
-         </div>
-      </nav>
+            </nav>
 
-  </header>
-  <aside id="aside">
-    <h3>Carts</h3>
-    <div id="product-item-container">
-        <p>Your cart is empty</p>
-    </div>
-  </aside>
-  <main>
-      <div class="hero-container">
-            <div id="product-section">
-                <div class="product-container">
-                    <img src="/images/image-product-1.jpg" class="product-image">
+        </header>
+        <aside id="aside">
+            <h3>Carts</h3>
+            <div id="product-item-container">
+                <p>Your cart is empty</p>
+            </div>
+        </aside>
+        <main>
+            <div class="hero-container">
+                    <div id="product-section">
+                        <div class="product-container">
+                            <img src="/images/image-product-1.jpg" class="product-image">
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail-container">
+                                <img src="/images/image-product-1-thumbnail.jpg" class="product-image">
+                            </div>
+                            <div class="thumbnail-container">
+                                <img src="/images/image-product-2-thumbnail.jpg" class="product-image">
+                            </div>
+                            <div class="thumbnail-container">
+                                <img src="/images/image-product-3-thumbnail.jpg" class="product-image">
+                            </div>
+                            <div class="thumbnail-container">
+                                <img src="/images/image-product-4-thumbnail.jpg" class="product-image">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="hero-container" id="text-div">
+                <h4>SNEAKER COMPANY</h4>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p id="text">These low-profile Sneakers are your perfect casual wear companion Featuring a durable rubber outer sole, they'll withstand everything the weather can offer
+                
+                </p>
+                <div id="price-div">
+                    <p id="discount-price">$<span id="discount">125.00</span></p>
+                    <p id="percent">50%</p>
                 </div>
-                <div class="thumbnail">
+                <p id="real-price">$250.00</p>
+                <div class="price-container">
+                <div class="price-cart">
+                    <div>
+                        <img src="/images/icon-minus.svg" id="decrease">
+                    </div>
+                    <div>
+                        <p id="quantity">0</p>
+                    </div>
+                    <div>
+                        <img src="/images/icon-plus.svg" id="increase">
+                    </div>
+                </div>
+                <button class="cart-button" id="button">
+                        <div>
+                            <img src="/images/icon-cart.svg">
+                        </div>
+                        <div>
+                            <p>Add to cart</p>
+                        </div>
+                </button>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="slider">
+        <div class="main-slider">
+            <img src="/images/icon-close.svg" alt="close-icon">
+            <div class="slider-container">
+                <img src="/images/image-product-1.jpg" class="product-image-slider">
+                <img src="/images/icon-previous.svg" class="previous-icon">
+                <img src="/images/icon-next.svg" class="next-icon">
+            </div>
+               <div class="thumbnail">
                     <div class="thumbnail-container">
                         <img src="/images/image-product-1-thumbnail.jpg" class="product-image">
                     </div>
@@ -71,43 +130,10 @@
                     <div class="thumbnail-container">
                         <img src="/images/image-product-4-thumbnail.jpg" class="product-image">
                     </div>
-                </div>
-            </div>
-      </div>
-      <div class="hero-container" id="text-div">
-        <h4>SNEAKER COMPANY</h4>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p id="text">These low-profile Sneakers are your perfect casual wear companion Featuring a durable rubber outer sole, they'll withstand everything the weather can offer
-          
-        </p>
-        <div id="price-div">
-            <p id="discount-price">$<span id="discount">125.00</span></p>
-            <p id="percent">50%</p>
+               </div>
         </div>
-        <p id="real-price">$250.00</p>
-        <div class="price-container">
-          <div class="price-cart">
-              <div>
-                  <img src="/images/icon-minus.svg" id="decrease">
-              </div>
-              <div>
-                  <p id="quantity">0</p>
-              </div>
-              <div>
-                  <img src="/images/icon-plus.svg" id="increase">
-              </div>
-          </div>
-          <button class="cart-button" id="button">
-                <div>
-                    <img src="/images/icon-cart.svg">
-                </div>
-                <div>
-                    <p>Add to cart</p>
-                </div>
-          </button>
-        </div>
-      </div>
-  </main>
+    </section>
+
   
 </body>
 </html>
