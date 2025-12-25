@@ -118,5 +118,17 @@ sliderDiv.addEventListener("click", function(event) {
 
     }
 
+       if(event.target.id === "previous") {
+
+
+        if(imageCount === 0) {
+            imageCount = images.length;
+            imageSlider.src = `${images[imageCount]}`
+        }
+        imageCount = imageCount - 1;
+        imageSlider.src = `${images[imageCount]}`;
+
+    }
+
 })
 
