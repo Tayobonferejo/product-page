@@ -245,4 +245,31 @@ aside > h3 {
 .next-icon {
     position: absolute;
     bottom: 230px;
+    right: -12px;
+}
+
+.previous-icon, .next-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon-div {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.close-icon {
+    position: absolute;
+    right: 0px;
+    border: 2px solid blue;   
+}
+
+.slider-img-div {
+    justify-content: center;
+    align-items: center;
 }

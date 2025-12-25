@@ -8,7 +8,8 @@ const checkout = document.getElementById("product-item-container")
 const cartIcon = document.getElementById("cart-icon")
 const aside = document.getElementById("aside")
 const unitPrice = (Number(discountedPrice.innerText));
-aside
+const images = ["/images/image-product-1.jpg", "/images/image-product-1.jpg","/images/image-product-1.jpg","/images/image-product-1.jpg"];
+
 
 let individualUnit = 0;
 console.log(unitPrice);
@@ -97,4 +98,5 @@ cartIcon.addEventListener("click", function(event)
         aside.classList.toggle("checkout-div");
         // console.log(event.target.id);
     }
-})
+});
+
