@@ -1,17 +1,22 @@
 
 const parentOfPrice = document.querySelector(".price-container");
+const productImage = document.querySelector(".product-image-slider");
 const quantity = document.getElementById("quantity");
 const button = document.getElementById("button");
 const numberOfItem = document.getElementById("numberOfItem");
 const discountedPrice = document.getElementById("discount");
 const checkout = document.getElementById("product-item-container")
-const cartIcon = document.getElementById("cart-icon")
+const cartIcon = document.getElementById("cart-icon");
 const aside = document.getElementById("aside")
 const unitPrice = (Number(discountedPrice.innerText));
-const images = ["/images/image-product-1.jpg", "/images/image-product-1.jpg","/images/image-product-1.jpg","/images/image-product-1.jpg"];
+const sliderDiv = document.getElementById("slider-div");
+const imageSlider = document.getElementById("image-slider");
+
+const images = ["/images/image-product-1.jpg", "/images/image-product-2.jpg","/images/image-product-3.jpg","/images/image-product-4.jpg"];
 
 
 let individualUnit = 0;
+let imageCount = 0;
 console.log(unitPrice);
 
 parentOfPrice.addEventListener("click" , function(event){
@@ -99,4 +104,19 @@ cartIcon.addEventListener("click", function(event)
         // console.log(event.target.id);
     }
 });
+
+sliderDiv.addEventListener("click", function(event) {
+
+    if(event.target.id === "next") {
+
+        imageCount = imageCount + 1;
+        imageSlider.src = `${images[imageCount]}`;
+        if(imageCount === images.length) {
+            imageCount = 0;
+            imageSlider.src = `${images[imageCount]}`
+        }
+
+    }
+
+})
 
