@@ -1,6 +1,8 @@
 
 const parentOfPrice = document.querySelector(".price-container");
 const productImage = document.querySelector(".product-image-slider");
+const sliderImages = document.querySelectorAll(".sliderImages");
+const thumbnailImages = document.querySelectorAll(".slider-img");
 const quantity = document.getElementById("quantity");
 const button = document.getElementById("button");
 const numberOfItem = document.getElementById("numberOfItem");
@@ -103,7 +105,6 @@ cartIcon.addEventListener("click", function(event)
      if(event.target.id === "cart-icon")
     {
         aside.classList.toggle("checkout-div");
-        // console.log(event.target.id);
     }
 });
 
@@ -139,3 +140,18 @@ close.addEventListener("click", function (){
 
 })
 
+sliderImages.forEach(img => {
+  img.addEventListener("click", (event) => {
+    const newSrc = event.target.src.replace("-thumbnail", "");
+    imageSlider.src = newSrc;
+    sliderSection.classList.toggle("hidden"); 
+  });
+});
+
+
+thumbnailImages.forEach(img => {
+  img.addEventListener("click", (event) => {
+    const newSrc = event.target.src.replace("-thumbnail", "");
+    imageSlider.src = newSrc;
+  });
+});
