@@ -20,7 +20,7 @@ const images = ["/images/image-product-1.jpg", "/images/image-product-2.jpg","/i
 
 
 let individualUnit = 0;
-let imageCount = 0;
+let imageCount;
 console.log(unitPrice);
 
 parentOfPrice.addEventListener("click" , function(event){
@@ -140,10 +140,11 @@ close.addEventListener("click", function (){
 
 })
 
-sliderImages.forEach(img => {
+sliderImages.forEach((img, index) => {
   img.addEventListener("click", (event) => {
     const newSrc = event.target.src.replace("-thumbnail", "");
     imageSlider.src = newSrc;
+    imageCount = index;
     sliderSection.classList.toggle("hidden"); 
   });
 });
