@@ -23,14 +23,16 @@ let individualUnit = 0;
 let imageCount;
 console.log(unitPrice);
 
+/* this section of code ensure the when you click increase button i.e the plus sign it increase and also 
+the minus sign functionality i.e reduce after it increase*/
+
+
 parentOfPrice.addEventListener("click" , function(event){
     if(event.target.id === "increase")
     {
         individualUnit = individualUnit + 1;
         sumOfUnit = individualUnit;
         quantity.innerText = individualUnit;
-        numberOfItem.innerText = individualUnit;
-        numberOfItem.className = "number-block"
 
     }
 
@@ -54,6 +56,11 @@ parentOfPrice.addEventListener("click" , function(event){
 
 })
 
+/* this section of code does the calculation of the price i.e it multiply the unit price
+ of the item which is the shoe with the price of the item and also show the cart
+  of the checkout in html*/
+
+
 function totalPrice (individualUnit, unitPrice) {
     return checkout.innerHTML = `
     <div class="cart-block">
@@ -73,6 +80,11 @@ function totalPrice (individualUnit, unitPrice) {
     `
 }
 
+
+/* the code is the event listener that will trigger the button after the
+ number of item have been select this is the buttoon beside the increment
+  and decrement button*/
+
 button.addEventListener("click", function() {
 
     if(individualUnit === 0)
@@ -82,10 +94,15 @@ button.addEventListener("click", function() {
 
     else {
         totalPrice(individualUnit, unitPrice);
+        numberOfItem.innerText = individualUnit;
+        numberOfItem.className = "number-block";
+        quantity.innerText = "0";
     }
     
 });
 
+/* the code uses the event delegation to ensure the delete 
+icon remove the cart from dom */
 
 checkout.addEventListener("click", function(event)
 {
@@ -107,6 +124,8 @@ cartIcon.addEventListener("click", function(event)
         aside.classList.toggle("checkout-div");
     }
 });
+
+/*the code ensure the function of the slider*/
 
 sliderDiv.addEventListener("click", function(event) {
 
