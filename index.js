@@ -7,10 +7,11 @@ const quantity = document.getElementById("quantity");
 const button = document.getElementById("button");
 const numberOfItem = document.getElementById("numberOfItem");
 const discountedPrice = document.getElementById("discount");
-const checkout = document.getElementById("product-item-container")
+const checkout = document.getElementById("product-item-container");
 const cartIcon = document.getElementById("cart-icon");
 const close = document.getElementById("close");
-const aside = document.getElementById("aside")
+const aside = document.getElementById("aside");
+const closeCheck = document.getElementById("close-check");
 const unitPrice = (Number(discountedPrice.innerText));
 const sliderDiv = document.getElementById("slider-div");
 const imageSlider = document.getElementById("image-slider");
@@ -175,3 +176,7 @@ thumbnailImages.forEach(img => {
     imageSlider.src = newSrc;
   });
 });
+
+closeCheck.addEventListener("click", function(){
+    
+})
