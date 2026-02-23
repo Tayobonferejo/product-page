@@ -144,7 +144,6 @@ main {
 
 aside {
     width: 290px;
-    height: 200px;
     border-radius: 4px;
     background-color: rgb(243, 243, 243);
     display: none;
@@ -284,6 +283,14 @@ aside > h3 {
     display: none;
 }
 
+
+.close-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem  ;
+
+}
 
 /* Base mobile styles */
 @media (max-width: 768px) {
@@ -475,8 +482,6 @@ aside > h3 {
     aside {
         width: 95%;
         max-width: 360px;
-        height: auto;
-        min-height: 200px;
         right: 50%;
         transform: translateX(50%);
         top: 80px;
@@ -490,7 +495,7 @@ aside > h3 {
     }
 
     #product-item-container {
-        padding: 1rem;
+        padding: 0 1rem;
         min-height: 150px;
     }
 
