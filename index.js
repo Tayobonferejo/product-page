@@ -97,6 +97,7 @@ button.addEventListener("click", function() {
         totalPrice(individualUnit, unitPrice);
         numberOfItem.innerText = individualUnit;
         numberOfItem.className = "number-block";
+        aside.classList.remove("closed");
         quantity.innerText = "0";
     }
     
@@ -116,6 +117,9 @@ checkout.addEventListener("click", function(event)
 function deleteCart() {
     checkout.innerHTML = `<p>Your cart is empty</p>`; // removes everything inside the div
     quantity.innerText = 0;
+    individualUnit = 0;
+    numberOfItem.innerText = "";
+    numberOfItem.classList.remove("number-block");
 }
 
 cartIcon.addEventListener("click", function(event)
@@ -178,5 +182,6 @@ thumbnailImages.forEach(img => {
 });
 
 closeCheck.addEventListener("click", function(){
-    
+      aside.classList.add("closed");
+      deleteCart();
 })
